@@ -1,0 +1,8 @@
+.error404{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    height: 100px;
+}

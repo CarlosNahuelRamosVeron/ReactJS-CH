@@ -1,6 +1,7 @@
 import './NavBar.css';
 import logo from '../../assets/alv.png';
 import CartWidget from '../cartWidget/CartWidget';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const activeLink = 'links activeLink';
@@ -9,13 +10,13 @@ const NavBar = () => {
     return (
         <nav id="navBar">
             <div className='column'>
-                <img className='logo' src={logo} alt="LOGO" />
+                <NavLink to="/"><img className='logo' src={logo} alt="LOGO" /></NavLink>
             </div>
             <div className='column navBarLinks'>
-                <a className={activeLink} href="http://localhost:5173/">Home</a>
-                <a className={links} href="http://localhost:5173/">New Arrivals</a>
-                <a className={links} href="http://localhost:5173/">Outlet</a>
-                <a className={links} href="http://localhost:5173/">Contact</a>
+                <NavLink className={activeLink} to={"/"}>Home</NavLink>
+                <NavLink className={links} to={"/category/t-shirts"}>T-shirts</NavLink>
+                <NavLink className={links} to={"/category/hoodies"}>Hoodies</NavLink>
+                <NavLink className={links} to={"/category/shorts"}>Shorts</NavLink>
             </div>
             <div className='column'>
                 <CartWidget/>

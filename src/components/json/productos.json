@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Tupac all eyes on me",
+        "description": "T-shirt oversize fit, 100% cotton",
+        "img": "https://cache-backend-mcd.mcdonaldscupones.com/media/image/product$kqXzqebG/200/200/original?country=ar",
+        "image": "https://acdn.mitiendanube.com/stores/219/431/products/da86b5fd-7386-4ae5-8abb-52c398da23cd-6058fdfe7cf0b1ba9317025824070514-640-0.webp",
+        "price": 20000,
+        "category": "t-shirts"
+    },
+    {
+        "id": 2,
+        "title": "Khea hoodie",
+        "img": "https://i.ibb.co/744XYfL/khea-hoodie.webp",
+        "description": "Hoodie xtreme-oversize fitcon with frisa premium material.",
+        "image": "https://acdn.mitiendanube.com/stores/219/431/products/b918a993-b0dc-4149-8f17-430b5ba7c701-b19c903f149723d74116963541666862-640-0.webp",
+        "price": 40000,
+        "category": "hoodies"
+    },
+    {
+        "id": 3,
+        "title": "Short Not A Brand",
+        "description": "Black short with withe seams and embroidery",
+        "img": "https://ibb.co/LRkS3Pd",
+        "image": "https://acdn.mitiendanube.com/stores/219/431/products/2290ovob1-ce8b42d82ec59ca2fe16712266787826-640-0.webp",
+        "price": 30000,
+        "category": "shorts"
+    }
+]

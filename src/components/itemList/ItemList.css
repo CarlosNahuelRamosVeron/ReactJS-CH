@@ -1,0 +1,7 @@
+.itemList{
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    column-gap: 30px;
+    height: 100%;
+    width: 100%;
+}
