@@ -6,9 +6,10 @@ const Item = ({item}) => {
     return (
         <div className="item">
             <Link to={"/item/" + item.id}>
-                <img src={item.img} className="itemImage" alt={item.title} />
+                <img src={item.image} className="itemImage" alt={item.title} />
                 <div>
-                    <p className="itemText">{item.title}</p>
+                    <h5 className="itemText">{item.title}</h5>
+                    <p className="itemPrice">${item.price}</p>
                 </div>
             </Link>
         </div>

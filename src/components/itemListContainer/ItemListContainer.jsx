@@ -19,7 +19,6 @@ const ItemListContainer = () => {
             setItems(data);
         })
     }, [category]);
-    console.log("aaaaaaaaa", items)
     return (
         <div className='itemListContainer'>
             <ItemList items={items}/>

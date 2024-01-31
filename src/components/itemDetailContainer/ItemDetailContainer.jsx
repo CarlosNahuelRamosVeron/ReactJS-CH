@@ -12,13 +12,13 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         const promise = new Promise(resolve => {
             setTimeout(() => {
-                let product = productList.find(item => item === parseInt(id))
-                resolve(product)
+                let product = productList.find(item => item === parseInt(id));
+                resolve(product);
             }, 2000)
         })
         promise.then(data => {
             setItem(data);
-        })
+        });
     }, [id])
     return (
         <ItemDetail item={item}/>
