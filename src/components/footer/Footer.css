@@ -1,0 +1,37 @@
+.footer{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    background-color: #000;
+    height: 100px;
+    font-family: sans-serif;
+    font-size: x-small;
+    color: rgb(255, 255, 255);
+}
+
+.footerLogo{
+    height: 100px;
+    width: 170px;
+}
+
+.sendersLogos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.andreaniLogo{
+   height: 60px;
+   width: 60px;
+}
+
+.ocaLogo{
+    height: 25px;
+    width: 100px;
+ }
+
+.footerContact{
+    display: grid;
+    grid-template-rows: 19px 15px 15px 15px 15px;
+    justify-content: left;
+}

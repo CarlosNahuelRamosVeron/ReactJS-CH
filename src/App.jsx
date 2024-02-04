@@ -1,5 +1,6 @@
 import './App.css';
 import NavBar from './components/navbar/NavBar';
+import Footer from './components/footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
@@ -15,6 +16,7 @@ function App() {
           <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
           <Route path={"*"} element={<Error404/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
   )
 }

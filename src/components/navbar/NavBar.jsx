@@ -4,7 +4,7 @@ import CartWidget from '../cartWidget/CartWidget';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
-    const activeLink = 'links activeLink';
+    const activeLink = 'links activeLink'; //TODO add this style to the active page dinamically
     const links = 'links';
 
     return (
