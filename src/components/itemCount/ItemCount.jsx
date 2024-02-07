@@ -19,7 +19,7 @@ const ItemCount = ({stock}) => {
 
     const onAdd = () => {
         if (counter <= itemStock) {
-            setItemStock(stock - counter);
+            setItemStock(itemStock - counter);
             setCounter(1);
             console.log(counter + " products added to the cart. Available products: " + (itemStock - counter));
         }
@@ -32,7 +32,7 @@ const ItemCount = ({stock}) => {
     return (
         <div className="countContainer">
             <div className="stockLeft"> 
-                <p>Stock left: {stock}</p>
+                <p>Stock left: {itemStock}</p>
             </div>
             <div className="counterContainer">
                 <button type="button" className="counterButtons" onClick={decrease}>-</button>
