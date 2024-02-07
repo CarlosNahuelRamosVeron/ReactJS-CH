@@ -1,0 +1,30 @@
+.countContainer{
+    display: grid;
+    grid-template-rows: 30px 30px 30px;
+    row-gap: 10px;
+}
+
+.stockLeft{
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+.counterContainer{
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    column-gap: 10px;
+}
+
+.counterButtons{
+    width: 30px;
+    height: 30px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addToCartButton{
+    width: 110px;
+}

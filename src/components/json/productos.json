@@ -5,7 +5,8 @@
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/da86b5fd-7386-4ae5-8abb-52c398da23cd-6058fdfe7cf0b1ba9317025824070514-640-0.webp",
         "price": 20000,
-        "category": "t-shirts"
+        "category": "t-shirts",
+        "stock": 22
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "description": "Hoodie xtreme-oversize fitcon with frisa premium material.",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/b918a993-b0dc-4149-8f17-430b5ba7c701-b19c903f149723d74116963541666862-640-0.webp",
         "price": 40000,
-        "category": "hoodies"
+        "category": "hoodies",
+        "stock": 5
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "description": "Black short with withe seams and embroidery",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/2290ovob1-ce8b42d82ec59ca2fe16712266787826-640-0.webp",
         "price": 30000,
-        "category": "shorts"
+        "category": "shorts",
+        "stock": 15
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://mysaintclo.com/cdn/shop/files/MS-055.jpg?v=1684857325&width=1100",
         "price": 22000,
-        "category": "t-shirts"
+        "category": "t-shirts",
+        "stock": 11
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "description": "Hoodie xtreme-oversize fitcon with frisa premium material.",
         "image": "https://mysaintclo.com/cdn/shop/files/SAINTCLOESHOP571.jpg?v=1702658359&width=1100",
         "price": 45000,
-        "category": "hoodies"
+        "category": "hoodies",
+        "stock": 7
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "description": "Grey short with withe seams and embroidery",
         "image": "https://mysaintclo.com/cdn/shop/files/SAINTCLOESHOP718.jpg?v=1703622033&width=823",
         "price": 29999,
-        "category": "shorts"
+        "category": "shorts",
+        "stock": 9
     }
 ]
