@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "title": "Short Not A Brand",
+        "title": "Not A Brand Short",
         "description": "Black short with withe seams and embroidery",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/2290ovob1-ce8b42d82ec59ca2fe16712266787826-640-0.webp",
         "price": "30.000",
@@ -28,7 +28,7 @@
     },
     {
         "id": 4,
-        "title": "CLUTCH",
+        "title": "Clutch Shirt",
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://mysaintclo.com/cdn/shop/files/MS-055.jpg?v=1684857325&width=1100",
         "price": "22.000",
@@ -46,7 +46,7 @@
     },
     {
         "id": 6,
-        "title": "Short My Saint",
+        "title": "My Saint Short",
         "description": "Grey short with withe seams and embroidery",
         "image": "https://mysaintclo.com/cdn/shop/files/SAINTCLOESHOP718.jpg?v=1703622033&width=823",
         "price": "29.999",
@@ -55,7 +55,7 @@
     },
     {
         "id": 7,
-        "title": "Shirt Street Ball",
+        "title": "Street Ball Shirt",
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://hoopers-brand.com/wp-content/uploads/2024/02/dsc-50-2-scaled.jpeg",
         "price": "27.999",
@@ -64,12 +64,11 @@
     },
     {
         "id": 8,
-        "title": "Hoodie Crewneck Hoopers",
+        "title": "Crewneck Hoopers Hoodie",
         "description": "Hoodie boxy fit, 100% cotton",
         "image": "https://hoopers-brand.com/wp-content/uploads/2023/10/foto-215-scaled.jpeg",
         "price": "29.999",
         "category": "hoodies",
         "stock": 13
     }
-
 ]

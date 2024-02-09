@@ -1,4 +1,5 @@
 .itemList{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    margin: 50px;
 }
