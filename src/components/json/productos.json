@@ -1,19 +1,19 @@
 [
     {
         "id": 1,
-        "title": "Tupac all eyes on me",
+        "title": "Tupac All Eyes On Me",
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/da86b5fd-7386-4ae5-8abb-52c398da23cd-6058fdfe7cf0b1ba9317025824070514-640-0.webp",
-        "price": 20000,
+        "price": "20.000",
         "category": "t-shirts",
         "stock": 22
     },
     {
         "id": 2,
-        "title": "Khea hoodie",
+        "title": "Khea Hoodie",
         "description": "Hoodie xtreme-oversize fitcon with frisa premium material.",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/b918a993-b0dc-4149-8f17-430b5ba7c701-b19c903f149723d74116963541666862-640-0.webp",
-        "price": 40000,
+        "price": "40.000",
         "category": "hoodies",
         "stock": 5
     },
@@ -22,7 +22,7 @@
         "title": "Short Not A Brand",
         "description": "Black short with withe seams and embroidery",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/2290ovob1-ce8b42d82ec59ca2fe16712266787826-640-0.webp",
-        "price": 30000,
+        "price": "30.000",
         "category": "shorts",
         "stock": 15
     },
@@ -31,7 +31,7 @@
         "title": "CLUTCH",
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://mysaintclo.com/cdn/shop/files/MS-055.jpg?v=1684857325&width=1100",
-        "price": 22000,
+        "price": "22.000",
         "category": "t-shirts",
         "stock": 11
     },
@@ -40,7 +40,7 @@
         "title": "My Saint Hoodie",
         "description": "Hoodie xtreme-oversize fitcon with frisa premium material.",
         "image": "https://mysaintclo.com/cdn/shop/files/SAINTCLOESHOP571.jpg?v=1702658359&width=1100",
-        "price": 45000,
+        "price": "45.000",
         "category": "hoodies",
         "stock": 7
     },
@@ -49,8 +49,27 @@
         "title": "Short My Saint",
         "description": "Grey short with withe seams and embroidery",
         "image": "https://mysaintclo.com/cdn/shop/files/SAINTCLOESHOP718.jpg?v=1703622033&width=823",
-        "price": 29999,
+        "price": "29.999",
         "category": "shorts",
         "stock": 9
+    },
+    {
+        "id": 7,
+        "title": "Shirt Street Ball",
+        "description": "T-shirt oversize fit, 100% cotton",
+        "image": "https://hoopers-brand.com/wp-content/uploads/2024/02/dsc-50-2-scaled.jpeg",
+        "price": "27.999",
+        "category": "t-shirts",
+        "stock": 8
+    },
+    {
+        "id": 8,
+        "title": "Hoodie Crewneck Hoopers",
+        "description": "Hoodie boxy fit, 100% cotton",
+        "image": "https://hoopers-brand.com/wp-content/uploads/2023/10/foto-215-scaled.jpeg",
+        "price": "29.999",
+        "category": "hoodies",
+        "stock": 13
     }
+
 ]

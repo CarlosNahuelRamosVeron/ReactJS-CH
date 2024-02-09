@@ -1,15 +1,19 @@
 .itemDetail{
     display: grid;
-    grid-template-columns: 300px 300px;
-    margin: 30px;
+    grid-template-columns: 50% 50%;
+    margin: 100px;
 }
 
-.itemImage{
-    height: 350px;
-    width: 300px;
+.itemDetailImageContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.itemDetailImage{
+    height: 400px;
+    width: 350px;
 }
 
 .itemDetails{
-    padding-left: 20px;
     font-family: sans-serif;
 }

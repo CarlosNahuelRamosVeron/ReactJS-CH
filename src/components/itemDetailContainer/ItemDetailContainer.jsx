@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import './ItemDetailContainer.css';
 import productList from '../json/productos.json'
 import ItemDetail from '../itemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
@@ -21,9 +20,7 @@ const ItemDetailContainer = () => {
         });
     }, [id])
     return (
-        <div className='itemDetailContainer'>
-            <ItemDetail item={item}/>
-        </div>   
+        <ItemDetail item={item}/> 
     )
 }
 

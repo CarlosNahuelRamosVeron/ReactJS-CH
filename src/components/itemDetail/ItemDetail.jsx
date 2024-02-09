@@ -4,8 +4,8 @@ import ItemCount from '../itemCount/ItemCount';
 const ItemDetail = ({item}) => {
     return (
         <div className="itemDetail">
-            <div>
-                <img className='itemImage' src={item.image} alt={item.title} />
+            <div className="itemDetailImageContainer">
+                <img className='itemDetailImage' src={item.image} alt={item.title} />
             </div>
             <div className='itemDetails'>
                 <h1>{item.title}</h1>
