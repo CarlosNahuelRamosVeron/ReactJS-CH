@@ -7,13 +7,17 @@
 .stockLeft{
     display: flex;
     align-items: center;
-    font-size: small;
+    font-size: medium;
 }
 
 .counterContainer{
     display: grid;
     grid-template-columns: 30px 30px 30px;
     column-gap: 10px;
+}
+
+.counterContainerOff{
+    display: none;
 }
 
 .counterButtons{

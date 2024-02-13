@@ -29,18 +29,20 @@ const ItemCount = ({stock}) => {
         setItemStock(stock);
     }, [stock])
 
+    const isItemSoldOut = itemStock < 1;
+
     return (
         <div className="countContainer">
             <div className="stockLeft"> 
-                <p>Stock left: {itemStock}</p>
+                {isItemSoldOut ? <p>SOLD OUT</p> : <p>Stock left: {itemStock}</p>}
             </div>
-            <div className="counterContainer">
+            <div className={isItemSoldOut ? "counterContainerOff" : "counterContainer"}>
                 <button type="button" className="counterButtons" onClick={decrease}>-</button>
                 <button type="button" className="counterButtons">{counter}</button>
                 <button type="button" className="counterButtons" onClick={increase}>+</button>
             </div>
             <div>
-                <button type="button" className="counterButtons addToCartButton" onClick={onAdd}>Add to cart</button>
+                <button disabled={isItemSoldOut} type="button" className="counterButtons addToCartButton" onClick={onAdd}>Add to cart</button>
             </div>
         </div>
     )
