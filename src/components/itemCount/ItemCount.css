@@ -32,3 +32,7 @@
 .addToCartButton{
     width: 110px;
 }
+
+.buttonOff{
+    display: none;
+}
