@@ -16,23 +16,6 @@
     column-gap: 10px;
 }
 
-.counterContainerOff{
-    display: none;
-}
-
-.counterButtons{
-    width: 30px;
-    height: 30px;
-    background-color: blanchedalmond;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.addToCartButton{
-    width: 110px;
-}
-
-.buttonOff{
+.off{
     display: none;
 }

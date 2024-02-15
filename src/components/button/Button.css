@@ -1,0 +1,16 @@
+.counter{
+    width: 30px;
+    height: 30px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.counterWider{
+    width: 110px;
+}
+
+.off{
+    display: none;
+}

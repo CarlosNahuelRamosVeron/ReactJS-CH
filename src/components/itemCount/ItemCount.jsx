@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './ItemCount.css';
+import Button from '../button/Button';
 
 const ItemCount = ({stock}) => {
     const [counter, setCounter] = useState(1);
@@ -37,18 +38,18 @@ const ItemCount = ({stock}) => {
     return (
         <div className="countContainer">
             <div className="stockLeft"> 
-                {isItemSoldOut ? <p>SOLD OUT</p> : <p>Stock left: {itemStock}</p>}
+                {isItemSoldOut? <p>SOLD OUT</p>: <p>Stock left: {itemStock}</p>}
             </div>
-            <div className={isItemSoldOut ? "counterContainerOff" : "counterContainer"}>
-                <button type="button" className="counterButtons" onClick={decrease}>-</button>
-                <button type="button" className="counterButtons">{counter}</button>
-                <button type="button" className="counterButtons" onClick={increase}>+</button>
+            <div className={isItemSoldOut? "off": "counterContainer"}>
+                <Button type="button" className="counter" onClick={decrease} value="-"/>
+                <Button type="button" className="counter" value={counter}/>
+                <Button type="button" className="counter" onClick={increase} value="+"/>
             </div>
             <div>
-                <button disabled={isItemSoldOut} type="button" className="counterButtons addToCartButton" onClick={onAdd}>Add to cart</button>
+                <Button disabled={isItemSoldOut} type="button" className="counter counterWider" onClick={onAdd} value="Add to cart"/>
             </div>
             <Link to={"/cart"}>
-                <button type="button" className={amountOfItemsInCart > 0 ? "counterButtons addToCartButton": "buttonOff"}>Go to cart</button>
+                <Button type="button" className={amountOfItemsInCart > 0? "counter counterWider": "off"} value="Go to cart"/>
             </Link>
         </div>
     )
