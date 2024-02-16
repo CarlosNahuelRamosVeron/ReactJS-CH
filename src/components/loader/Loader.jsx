@@ -1,8 +1,11 @@
 import "./Loader.css";
+import loading from '../../assets/loader.svg';
 
-const Loader = ({loading}) => {
+const Loader = () => {
     return (
-        <h2 className={loading ? "loadingTrue": "loadingFalse"}>Loading</h2>
+        <div className="loaderContainer">
+             <img className="loading" src={loading} alt="Loading" />
+        </div>
     )
 }
 

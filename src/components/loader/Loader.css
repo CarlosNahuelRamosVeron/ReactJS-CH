@@ -1,7 +1,16 @@
-.loadingTrue{
-    font-family: sans-serif;
+.loaderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    animation: spin 1s infinite;
 }
 
-.loadingFalse{
-    display: none;
+.loading{
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes spin {
+    100% {transform: rotate(360deg);}
 }
