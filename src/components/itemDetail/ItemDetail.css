@@ -17,3 +17,14 @@
 .itemDetails{
     font-family: sans-serif;
 }
+
+@media (max-width: 1000px){
+    .itemDetail{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+    .itemDetails{
+        justify-content: center;
+        align-items: center;
+    }
+}
