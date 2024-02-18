@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import products from '../json/productos.json'
+import products from '../json/productos.json';
 import { useState } from 'react';
 import ItemList from '../itemList/ItemList';
 import Loader from '../loader/Loader';

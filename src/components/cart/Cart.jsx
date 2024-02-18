@@ -1,8 +1,18 @@
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import "./Cart.css";
 
 const Cart = () => {
+    const {products} = useContext(CartContext);
+   
     return (
-        <h2>CART</h2>
+        <div className="cart">
+            <ul>
+                {products.map(item => (
+                    <li key={item.id}>{item.title} ${item.price}</li>
+                ))}
+            </ul>
+        </div>
     )
 }
 
