@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import trashIcon from '../../assets/trash.svg';
 import { CartContext } from "../context/CartContext";
+import Button from '../button/Button';
 import "./Cart.css";
 
 const Cart = () => {
-    const {cart, removeItemById, totalQuantityOfProducts, totalPriceOfProducts} = useContext(CartContext);
+    const {cart, removeItemById, clear, totalQuantityOfProducts, totalPriceOfProducts} = useContext(CartContext);
    
     if (totalQuantityOfProducts() == 0) {
         return (
@@ -18,14 +19,19 @@ const Cart = () => {
 
     return (
         <div className="cart">
+            <div>
+                <h1>YOUR CART</h1>
+            </div>
             <table className="table">
-                <th className="rows">
+                <th className="rows tableHeader">
                     <td></td>
                     <td>Title</td>
                     <td>Price</td>
                     <td>Quantity</td>
                     <td>Total</td>
-                    <td></td>
+                    <td>
+                        <Button onClick={clear} className="clearAll" value="Clear All"/>
+                    </td>
                 </th>
                 <tbody>
                     {cart.map(product => 
@@ -35,7 +41,7 @@ const Cart = () => {
                             <td>${product.price}</td>
                             <td>{product.quantity}</td>
                             <td>${product.quantity * product.price}</td>
-                            <td>
+                            <td className="trash">
                                 <a href="#" onClick={() => {removeItemById(product.id)}}>
                                     <img src={trashIcon} alt="Remove item"/>
                                 </a>
@@ -43,7 +49,7 @@ const Cart = () => {
                         </tr>
                     )}
                     <tr className="rows tableTotal">
-                        <td>Total</td>
+                        <td className="total">Total</td>
                         <td></td>
                         <td></td>
                         <td></td>

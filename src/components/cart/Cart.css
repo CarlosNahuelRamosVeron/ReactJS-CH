@@ -1,6 +1,9 @@
 .cart{
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
     justify-content: center;
+    text-align: center;
     margin: 100px;
     font-family: sans-serif;
 }
@@ -26,11 +29,15 @@
 
 .rows{
     display: grid;
-    grid-template-columns: 50px 250px 100px 100px 100px 50px;
+    grid-template-columns: 150px 250px 200px 200px 200px 150px;
     text-align: center;  
     align-items: baseline;
     border-bottom: 1px solid rgb(215, 215, 215);
     margin-top: 3px;
+}
+
+.tableHeader{
+    padding-bottom: 5px;
 }
 
 .tableTotal{
@@ -38,6 +45,17 @@
 }
 
 .cartProductImg{
+    display: flex;
+    justify-content: start;
     width: 40px;
     height: 45px;
+}
+
+.trash{
+    display: flex;
+    justify-content: end;
+}
+
+.total{
+    text-align: left;
 }
