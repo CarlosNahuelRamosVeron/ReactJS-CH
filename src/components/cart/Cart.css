@@ -19,12 +19,22 @@
     padding: 10px;
 }
 
-.table{
+.tableHeader{
+    height: 20x;
+}
+
+.tableRow{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 50px 250px 100px 100px 100px 50px;
+    align-items: baseline;
+    height: auto;
+    text-align: center;
+    column-gap: 10px;
+    margin-top: 2px;
+    border-bottom: 1px solid rgb(215, 215, 215);
 }
 
 .cartProductImg{
     width: 50px;
-    height: 50px;
+    height: 55px;
 }

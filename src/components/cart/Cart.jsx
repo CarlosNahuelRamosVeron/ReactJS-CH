@@ -20,8 +20,16 @@ const Cart = () => {
         <div className="cart">
             <table className="table">
                 <tbody>
+                    <th className="tableRow tableHeader">
+                        <td></td>
+                        <td>Title</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                        <td></td>
+                    </th>
                     {cart.map(product => 
-                        <tr>
+                        <tr className="tableRow">
                             <td><img src={product.image} alt={product.title} className="cartProductImg"/></td>
                             <td>{product.title}</td>
                             <td>${product.price}</td>
@@ -34,9 +42,13 @@ const Cart = () => {
                             </td>
                         </tr>
                     )}
-                    <tr>
+                    <tr className="tableRow">
                         <td>Total</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>${totalPriceOfProducts()}</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
