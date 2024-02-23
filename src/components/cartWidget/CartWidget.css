@@ -35,4 +35,5 @@
 .amountValue{
     color: rgb(255, 255, 255);
     font-size: 12px;
+    text-decoration: underline rgb(254, 10, 10);
 }
