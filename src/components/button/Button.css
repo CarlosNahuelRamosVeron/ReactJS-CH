@@ -1,3 +1,11 @@
+.navBar{
+    width: 30px;
+    height: 30px;
+    background-color: blanchedalmond;
+    border: 1px solid rgb(226, 226, 226);
+    font-size: larger;
+}
+
 .counter{
     width: 30px;
     height: 30px;

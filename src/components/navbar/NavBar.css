@@ -1,12 +1,10 @@
-
 #navBar{
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    align-items: center;
     background-color: rgb(255, 255, 255);
     height: 80px;
     font-family: Arial, Helvetica, sans-serif;
-    border-bottom: #000 solid 1px;
+    border-bottom: 1px solid rgb(215, 215, 215);
 }
 
 .column{
@@ -42,4 +40,70 @@
     font-size: 28px;
     font-weight: bold;
     text-decoration: underline ;
+}
+
+.off{
+    display: none;
+}
+
+.navBarResponsive{
+    display: none;
+}
+
+.navBarResponsiveOn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 150px;
+    top: 88px;
+    left: 0;
+    padding-left: 20px;
+    border: 1px solid rgb(215, 215, 215);
+    border-top: none;
+    background: #fff;
+    z-index: 1;
+    animation: slide 1s;
+}
+
+@keyframes slide {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+
+@media (max-width: 850px){
+    .logo{
+        height: 30px;
+    }
+    .navBarLinks{
+        column-gap: 30px;
+        font-size: 15px;
+    }
+    .activeLink{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 680px){
+    .navBarLinks{
+        column-gap: 20px;
+        font-size: 13px;
+    }
+    .activeLink{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 570px){
+    #navBar{
+        grid-template-columns: 30% 40% 30%;
+    }
+    .navBarResponsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navBarLinks{
+        display: none;
+    }
 }
