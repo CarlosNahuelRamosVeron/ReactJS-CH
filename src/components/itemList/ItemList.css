@@ -3,3 +3,21 @@
     grid-template-columns: 25% 25% 25% 25%;
     margin: 50px;
 }
+
+@media (max-width: 1200px){
+    .itemList{
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media (max-width: 950px){
+    .itemList{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 665px){
+    .itemList{
+        grid-template-columns: 100%;
+    }
+}
