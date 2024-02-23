@@ -1,53 +1,43 @@
-import { useEffect } from 'react';
+import { addDoc, collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import products from '../json/productos.json';
-import { useState } from 'react';
 import ItemList from '../itemList/ItemList';
 import Loader from '../loader/Loader';
-import { getFirestore, collection, addDoc, query, getDocs } from 'firebase/firestore'; //TODO
+import Carousel from '../carousel/Carousel';
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
     const {category} = useParams();
 
-    useEffect(() => {
-        setLoading(true);
-        const promise = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(category ? products.filter(item => item.category == category) : products);
-            }, 2000);
-        })
-        promise.then(data => {
-            setItems(data);
-            setLoading(false);
-        })
-        
-    }, [category]);
-
     /*useEffect(() => {
         const db = getFirestore();
-        const itemsCollection = collection(db, "item");
+        const itemsCollection = collection(db, "items");
 
         products.forEach(product => {
             addDoc(itemsCollection, product)
         })
 
         console.log("All product upload successfuly");
-    }, []);
+    }, []);*/
 
     useEffect(() => {
+        setLoading(true);
         const db = getFirestore();
-        const itemsCollection = collection(db, "item");
-        const query = id ? query(itemsCollection, where("category", "==", id)) : itemsCollection;
+        const itemsCollection = collection(db, "items");
+        const collectionFiltered = category ? query(itemsCollection, where("category", "==", category)) : itemsCollection;
 
-        getDocs(query).then(result => {
-            setItems(result.docs.map(product => {{id:product.id, ...product.data()}}));
-        })
-    }, [id]);*/
+        getDocs(collectionFiltered).then(result => {
+            setItems(result.docs.map(product => ({id:product.id, ...product.data()})));
+            setLoading(false);
+        });
+    }, [category]);
     
     return (
-        loading ? <Loader/>: <ItemList items={items}/>  
+        <>
+            <Carousel/>
+            {loading ? <Loader/>: <ItemList items={items}/>}
+        </>
     )
 }
 

@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
-import productList from '../json/productos.json'
+import { doc, getDoc, getFirestore } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import ItemDetail from '../itemDetail/ItemDetail';
 import Loader from '../loader/Loader';
-import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState([]);
@@ -12,17 +11,15 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true);
-        const promise = new Promise(resolve => {
-            setTimeout(() => {
-                let product = productList.find(item => item.id === parseInt(id));
-                resolve(product);
-            }, 2000)
-        })
-        promise.then(data => {
-            setItem(data);
+        const db = getFirestore();
+        const product = doc(db, "items", id)
+
+        getDoc(product).then(result => {
+            setItem({id:result.id, ...result.data()});
             setLoading(false);
         });
-    }, [id])
+    }, [id]);
+
     return (
         loading ? <Loader/>: <ItemDetail item={item}/>
     )
