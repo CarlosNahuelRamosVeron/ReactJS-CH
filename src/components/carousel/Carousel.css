@@ -16,7 +16,7 @@
     grid-template-columns: auto auto auto auto
      auto auto auto auto auto auto auto auto auto auto;
     align-items: center;
-    animation: tape 8s infinite linear;
+    animation: tape 20s infinite linear;
 }
 
 .imgMS{
