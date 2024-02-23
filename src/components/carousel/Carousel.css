@@ -1,0 +1,40 @@
+.carouselContainer{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 500px;
+    width: 100%;
+}
+
+.carouselButton{
+    display: flex;
+    align-items: center;
+}
+
+.previous{
+    justify-content: end;
+}
+
+.next{
+    justify-content: start;
+}
+
+.carouselImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMS{
+    height: 500px;
+    width: 600px;
+}
+
+.imgKOK{
+    height: 150px;
+    width: 300px;
+}
+
+.imgHB{
+    height: 300px;
+    width: 300px;
+}
