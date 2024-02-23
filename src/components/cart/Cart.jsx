@@ -52,12 +52,15 @@ const Cart = () => {
                         <td className="total">Total</td>
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <td>{totalQuantityOfProducts()}</td>
                         <td>${totalPriceOfProducts()}</td>
                         <td></td>
                     </tr>
                 </tbody>
             </table>
+            <div>
+                <Link to={"/checkout"} className="checkout">Checkout</Link>
+            </div>
         </div>
     )
 }

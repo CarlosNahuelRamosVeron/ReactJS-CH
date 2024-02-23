@@ -35,7 +35,7 @@ const ItemListContainer = () => {
     
     return (
         <>
-            <Carousel/>
+            {category ? "": <Carousel/>}
             {loading ? <Loader/>: <ItemList items={items}/>}
         </>
     )

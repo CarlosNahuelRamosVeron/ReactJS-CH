@@ -1,8 +1,9 @@
 .cart{
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 80px auto 50px;
     row-gap: 20px;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 100px;
     font-family: sans-serif;
@@ -30,10 +31,10 @@
 .rows{
     display: grid;
     grid-template-columns: 150px 250px 200px 200px 200px 150px;
-    text-align: center;  
     align-items: baseline;
     border-bottom: 1px solid rgb(215, 215, 215);
     margin-top: 3px;
+    font-size: small;
 }
 
 .tableHeader{
@@ -58,4 +59,14 @@
 
 .total{
     text-align: left;
+}
+
+.checkout{
+    font-size: large;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: blanchedalmond;
 }
