@@ -1,6 +1,7 @@
 import { addDoc, collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+//import products from "../json/productos.json"
 import ItemList from '../itemList/ItemList';
 import Loader from '../loader/Loader';
 import Carousel from '../carousel/Carousel';

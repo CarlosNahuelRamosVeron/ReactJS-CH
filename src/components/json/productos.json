@@ -1,74 +1,172 @@
 [
     {
-        "id": 1,
+        "AlvId": 1,
         "title": "Tupac All Eyes On Me",
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/da86b5fd-7386-4ae5-8abb-52c398da23cd-6058fdfe7cf0b1ba9317025824070514-640-0.webp",
         "price": "20000",
         "category": "t-shirts",
-        "stock": 22
+        "stock": 22,
+        "brand": "King of the Kongo"
     },
     {
-        "id": 2,
+        "AlvId": 2,
         "title": "Khea Hoodie",
         "description": "Hoodie xtreme-oversize fitcon with frisa premium material.",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/b918a993-b0dc-4149-8f17-430b5ba7c701-b19c903f149723d74116963541666862-640-0.webp",
         "price": "40000",
         "category": "hoodies",
-        "stock": 5
+        "stock": 5,
+        "brand": "King of the Kongo"
     },
     {
-        "id": 3,
+        "AlvId": 3,
         "title": "Not A Brand Short",
         "description": "Black short with withe seams and embroidery",
         "image": "https://acdn.mitiendanube.com/stores/219/431/products/2290ovob1-ce8b42d82ec59ca2fe16712266787826-640-0.webp",
         "price": "30000",
         "category": "shorts",
-        "stock": 15
+        "stock": 15,
+        "brand": "King of the Kongo"
     },
     {
-        "id": 4,
+        "AlvId": 4,
         "title": "Clutch Shirt",
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://mysaintclo.com/cdn/shop/files/MS-055.jpg?v=1684857325&width=1100",
         "price": "22000",
         "category": "t-shirts",
-        "stock": 11
+        "stock": 11,
+        "brand": "My Saint"
     },
     {
-        "id": 5,
+        "AlvId": 5,
         "title": "My Saint Hoodie",
         "description": "Hoodie xtreme-oversize fitcon with frisa premium material.",
         "image": "https://mysaintclo.com/cdn/shop/files/SAINTCLOESHOP571.jpg?v=1702658359&width=1100",
         "price": "45000",
         "category": "hoodies",
-        "stock": 7
+        "stock": 7,
+        "brand": "My Saint"
     },
     {
-        "id": 6,
+        "AlvId": 6,
         "title": "My Saint Short",
         "description": "Grey short with withe seams and embroidery",
         "image": "https://mysaintclo.com/cdn/shop/files/SAINTCLOESHOP718.jpg?v=1703622033&width=823",
         "price": "29999",
         "category": "shorts",
-        "stock": 9
+        "stock": 9,
+        "brand": "My Saint"
     },
     {
-        "id": 7,
+        "AlvId": 7,
         "title": "Street Ball Shirt",
         "description": "T-shirt oversize fit, 100% cotton",
         "image": "https://hoopers-brand.com/wp-content/uploads/2024/02/dsc-50-2-scaled.jpeg",
         "price": "27999",
         "category": "t-shirts",
-        "stock": 8
+        "stock": 8,
+        "brand": "Hoppers Brand"
     },
     {
-        "id": 8,
+        "AlvId": 8,
         "title": "Crewneck Hoopers Hoodie",
         "description": "Hoodie boxy fit, 100% cotton",
         "image": "https://hoopers-brand.com/wp-content/uploads/2023/10/foto-215-scaled.jpeg",
         "price": "29999",
         "category": "hoodies",
-        "stock": 13
+        "stock": 13,
+        "brand": "Hoppers Brand"
+    },
+    {
+        "AlvId": 9,
+        "title": "Notte Short",
+        "description": "Black short NOTTEL with withe seams and embroidery",
+        "image": "https://acdn.mitiendanube.com/stores/001/177/291/products/_mg_9807-f3ab019b1da7111f8917069762671309-640-0.webp",
+        "price": "26999",
+        "category": "shorts",
+        "stock": 10,
+        "brand": "Notte"
+    },
+    {
+        "AlvId": 10,
+        "title": "Classic Acid Wash Shirt",
+        "description": "T-shirt oversize fit, 100% cotton",
+        "image": "https://acdn.mitiendanube.com/stores/001/177/291/products/washedclassic-4c581f4a8737d8bf2f16976550258842-640-0.webp",
+        "price": "20999",
+        "category": "t-shirts",
+        "stock": 8,
+        "brand": "Notte"
+    },
+    {
+        "AlvId": 11,
+        "title": "Cult Brown Hoodie",
+        "description": "Hoodie boxy fit, 100% cotton",
+        "image": "https://acdn.mitiendanube.com/stores/001/177/291/products/cultchocofrente-0e5b392664b4ba7f3317083868786697-640-0.webp",
+        "price": "49999",
+        "category": "hoodies",
+        "stock": 13,
+        "brand": "Notte"
+    },
+    {
+        "AlvId": 12,
+        "title": "Championship Deep Navy Short",
+        "description": "Black short NOTTEL with withe seams and embroidery",
+        "image": "https://nude-project.com/cdn/shop/files/NUDECUPSHORTDEEPNAVYfront_800x.jpg?v=1706274039",
+        "price": "26999",
+        "category": "shorts",
+        "stock": 10,
+        "brand": "Nude Project"
+    },
+    {
+        "AlvId": 13,
+        "title": "Boxy Washed Brown Shirt",
+        "description": "T-shirt oversize fit, 100% cotton",
+        "image": "https://nude-project.com/cdn/shop/files/BOXYTEEBROWNfront_800x.jpg?v=1706613223",
+        "price": "49999",
+        "category": "t-shirts",
+        "stock": 8,
+        "brand": "Nude Project"
+    },
+    {
+        "AlvId": 14,
+        "title": "Time Ash Hoodie",
+        "description": "Hoodie boxy fit, 100% cotton",
+        "image": "https://nude-project.com/cdn/shop/files/21_400x.jpg?v=1701347328",
+        "price": "59999",
+        "category": "hoodies",
+        "stock": 13,
+        "brand": "Nude Project"
+    }, 
+    {
+        "AlvId": 15,
+        "title": "Rusty Bleu Short",
+        "description": "Blue short essential",
+        "image": "https://freres.ar/wp-content/uploads/2024/02/Freres-febrero-22-1280x1280.jpg",
+        "price": "25999",
+        "category": "shorts",
+        "stock": 10,
+        "brand": "Freres"
+    },
+    {
+        "AlvId": 16,
+        "title": "Noir Oversized Shirt",
+        "description": "T-shirt oversize fit, 100% cotton",
+        "image": "https://freres.ar/wp-content/uploads/2023/02/Productos-Abril-scaled-1-scaled.jpg",
+        "price": "26999",
+        "category": "t-shirts",
+        "stock": 8,
+        "brand": "Freres"
+    },
+    {
+        "AlvId": 17,
+        "title": "Rusty Bleu Hoodie",
+        "description": "Hoodie boxy fit, 100% cotton",
+        "image": "https://freres.ar/wp-content/uploads/2024/02/Freres-febrero-21-1280x1280.jpg",
+        "price": "36999",
+        "category": "hoodies",
+        "stock": 13,
+        "brand": "Freres"
     }
 ]
