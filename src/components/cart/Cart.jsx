@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import trashIcon from '../../assets/trash.svg';
-import { CartContext } from "../context/CartContext";
 import Button from '../button/Button';
+import { CartContext } from "../context/CartContext";
 import "./Cart.css";
 
 const Cart = () => {
@@ -23,7 +23,7 @@ const Cart = () => {
                 <h1>YOUR CART</h1>
             </div>
             <table className="table">
-                <th className="rows tableHeader">
+                <tr className="rows tableHeader">
                     <td></td>
                     <td>Title</td>
                     <td>Price</td>
@@ -32,7 +32,7 @@ const Cart = () => {
                     <td>
                         <Button onClick={clear} className="clearAll" value="Clear All"/>
                     </td>
-                </th>
+                </tr>
                 <tbody>
                     {cart.map(product => 
                         <tr className="rows">
