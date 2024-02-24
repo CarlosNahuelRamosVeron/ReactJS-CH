@@ -1,33 +1,51 @@
 import { addDoc, collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../button/Button";
 import { CartContext } from "../context/CartContext";
+import { emailValidation, fullNameValidation, phoneNumberValidation } from "../json/formsValidation";
 import './Checkout.css';
-//TODO input validations
+
 const Checkout = () => {
     const {cart, clear, totalQuantityOfProducts, totalPriceOfProducts} = useContext(CartContext);
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [number, setNumber] = useState();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [number, setNumber] = useState("");
     const [orderId, setOrderId] = useState();
-
+    
     const generateOrder = () => {
-        if (name.length === 0 || email.length === 0 || number === 0) {
-            return false;
-        }
-        const buyer = {name:name, email:email, phone:number};
-        const items = cart.map(item => ({id:item.id, title:item.title, price:item.price}));
-        const date = new Date();
-        const customDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
-        const order = {buyer:buyer, items:items, date:customDate, total:totalPriceOfProducts()};
+        const fullNameValidationResult = fullNameValidation(name);
+        const emailValidationResult = emailValidation(email);
+        const phoneNumberValidationResult = phoneNumberValidation(number);
         
-        const db = getFirestore();
-        const ordersCollection = collection(db, "orders");
-        addDoc(ordersCollection, order).then(result => {
-            setOrderId(result.id);
-            clear();
-        });
-
+        if (!fullNameValidationResult && !emailValidationResult && !phoneNumberValidationResult) {
+            console.log("Validations passed successfully!");
+            const buyer = {name:name, email:email, phone:number};
+            const items = cart.map(item => ({id:item.id, title:item.title, price:item.price}));
+            const date = new Date();
+            const customDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
+            const order = {buyer:buyer, items:items, date:customDate, total:totalPriceOfProducts()};
+            
+            const db = getFirestore();
+            const ordersCollection = collection(db, "orders");
+            addDoc(ordersCollection, order).then(result => {
+                setOrderId(result.id);
+                clear();
+            });
+        } else {
+            if (fullNameValidationResult) {
+                console.log("Validations falied caused by: " + fullNameValidationResult);
+                setName("");
+            }
+            if (emailValidationResult) {
+                console.log("Validations falied caused by: " + emailValidationResult);
+                setEmail("");
+            }
+            if (phoneNumberValidationResult) {
+                console.log("Validations falied caused by: " + phoneNumberValidationResult);
+                setNumber("");
+            }
+        }
     }
 
     return (
@@ -67,18 +85,21 @@ const Checkout = () => {
                             value="Generate order" 
                             className="generateOrder"
                             onClick={generateOrder}
+                            disabled={cart.length === 0 || name.length === 0 
+                                || email.length === 0 || number.length === 0 ? true
+                                : false}
                         />
                     </form>
                 </div>
                 <div>
                     <table>
-                        <th className="checkoutRows checkoutHeader">
+                        <tr className="checkoutRows checkoutHeader">
                             <td></td>
                             <td>Title</td>
                             <td>Price</td>
                             <td>Quantity</td>
                             <td>Total</td>
-                        </th>
+                        </tr>
                         <tbody>
                             {cart.map(product => 
                                 <tr className="checkoutRows">
