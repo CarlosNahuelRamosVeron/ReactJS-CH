@@ -1,6 +1,5 @@
 import { addDoc, collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 import Button from "../button/Button";
 import { CartContext } from "../context/CartContext";
 import { emailValidation, fullNameValidation, phoneNumberValidation } from "../json/formsValidation";
@@ -12,7 +11,7 @@ const Checkout = () => {
     const [email, setEmail] = useState("");
     const [number, setNumber] = useState("");
     const [orderId, setOrderId] = useState();
-    
+
     const generateOrder = () => {
         const fullNameValidationResult = fullNameValidation(name);
         const emailValidationResult = emailValidation(email);
@@ -31,18 +30,22 @@ const Checkout = () => {
             addDoc(ordersCollection, order).then(result => {
                 setOrderId(result.id);
                 clear();
+                setName("");
+                setEmail("");
+                setNumber("");
             });
         } else {
+            console.log("Validations falied!");
             if (fullNameValidationResult) {
-                console.log("Validations falied caused by: " + fullNameValidationResult);
+                alert(fullNameValidationResult);
                 setName("");
             }
             if (emailValidationResult) {
-                console.log("Validations falied caused by: " + emailValidationResult);
+                alert(emailValidationResult);
                 setEmail("");
             }
             if (phoneNumberValidationResult) {
-                console.log("Validations falied caused by: " + phoneNumberValidationResult);
+                alert(phoneNumberValidationResult);
                 setNumber("");
             }
         }
@@ -102,7 +105,7 @@ const Checkout = () => {
                         </tr>
                         <tbody>
                             {cart.map(product => 
-                                <tr className="checkoutRows">
+                                <tr key={product.alvId} className="checkoutRows">
                                     <td><img src={product.image} alt={product.title} className="checkoutProductImg"/></td>
                                     <td>{product.title}</td>
                                     <td>${product.price}</td>

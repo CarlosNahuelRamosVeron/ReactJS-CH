@@ -35,7 +35,7 @@ const Cart = () => {
                 </tr>
                 <tbody>
                     {cart.map(product => 
-                        <tr className="rows">
+                        <tr key={product.alvId} className="rows">
                             <td><img src={product.image} alt={product.title} className="cartProductImg"/></td>
                             <td>{product.title}</td>
                             <td>${product.price}</td>
