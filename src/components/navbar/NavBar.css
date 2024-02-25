@@ -124,14 +124,8 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 370px){
     .activeLink{
         font-size: 10px;
-    }
-}
-
-@media (max-width: 340px){
-    .activeLink{
-        font-size: 5px;
     }
 }
