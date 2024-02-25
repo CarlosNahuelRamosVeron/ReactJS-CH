@@ -1,7 +1,7 @@
 .checkoutContainer{
     display: grid;
-    grid-template-rows: 80px auto auto;
-    row-gap: 20px;
+    grid-template-rows: 80px auto auto auto;
+    row-gap: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -10,9 +10,8 @@
 }
 
 .formContainer{
-    display: grid;
-    grid-template-columns: 350px auto;
-    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .form{
@@ -62,4 +61,14 @@
 
 .off{
     display: none;
+}
+
+@media (max-width: 620px){
+    .checkoutRows{
+        grid-template-columns: 30px 200px 55px 20px 55px;
+    }
+    .checkoutProductImg{
+        width: 30px;
+        height: 35px;
+    }
 }

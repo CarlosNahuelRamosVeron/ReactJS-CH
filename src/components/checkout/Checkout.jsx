@@ -56,74 +56,72 @@ const Checkout = () => {
             <div>
                 <h1>CHECKOUT</h1>
             </div>
-            <div className="formContainer">
-                <div>
-                    <form action="" className="form">
-                        <div className="inputContainer">
-                            <label className="label">Full Name</label>
-                            <input 
-                                type="text" 
-                                className="input" 
-                                onInput={(event) => setName(event.target.value)}
-                            />
-                        </div>
-                        <div className="inputContainer">
-                            <label className="label">Email Address</label>
-                            <input 
-                                type="text" 
-                                className="input"
-                                onInput={(event) => setEmail(event.target.value)}
-                            />
-                        </div>
-                        <div className="inputContainer">
-                            <label className="label">Phone Number</label>
-                            <input 
-                                type="text" 
-                                className="input"
-                                onInput={(event) => setNumber(event.target.value)}
-                            />
-                        </div>
-                        <Button 
-                            type="button" 
-                            value="Generate order" 
-                            className="generateOrder"
-                            onClick={generateOrder}
-                            disabled={cart.length === 0 || name.length === 0 
-                                || email.length === 0 || number.length === 0 ? true
-                                : false}
-                        />
-                    </form>
-                </div>
-                <div>
-                    <table>
-                        <tr className="checkoutRows checkoutHeader">
-                            <td></td>
-                            <td>Title</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                            <td>Total</td>
-                        </tr>
-                        <tbody>
-                            {cart.map(product => 
-                                <tr key={product.alvId} className="checkoutRows">
-                                    <td><img src={product.image} alt={product.title} className="checkoutProductImg"/></td>
-                                    <td>{product.title}</td>
-                                    <td>${product.price}</td>
-                                    <td>{product.quantity}</td>
-                                    <td>${product.quantity * product.price}</td>
-                                </tr>
-                            )}
-                            <tr className="checkoutRows">
-                                <td>Total</td>
-                                <td></td>
-                                <td></td>
-                                <td>{totalQuantityOfProducts()}</td>
-                                <td>${totalPriceOfProducts()}</td>
-                                <td></td>
+            <div>
+                <table>
+                    <tr className="checkoutRows checkoutHeader">
+                        <td></td>
+                        <td>Title</td>
+                        <td>Price</td>
+                        <td></td>
+                        <td>Total</td>
+                    </tr>
+                    <tbody>
+                        {cart.map(product => 
+                            <tr key={product.alvId} className="checkoutRows">
+                                <td><img src={product.image} alt={product.title} className="checkoutProductImg"/></td>
+                                <td>{product.title}</td>
+                                <td>${product.price}</td>
+                                <td>x{product.quantity}</td>
+                                <td>${product.quantity * product.price}</td>
                             </tr>
-                        </tbody>
-                    </table>
-                </div>
+                        )}
+                        <tr className="checkoutRows">
+                            <td>Total</td>
+                            <td></td>
+                            <td></td>
+                            <td>{totalQuantityOfProducts()}</td>
+                            <td>${totalPriceOfProducts()}</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div className="formContainer">
+                <form action="" className="form">
+                    <div className="inputContainer">
+                        <label className="label">Full Name</label>
+                        <input 
+                            type="text" 
+                            className="input" 
+                            onInput={(event) => setName(event.target.value)}
+                        />
+                    </div>
+                    <div className="inputContainer">
+                        <label className="label">Email Address</label>
+                        <input 
+                            type="text" 
+                            className="input"
+                            onInput={(event) => setEmail(event.target.value)}
+                        />
+                    </div>
+                    <div className="inputContainer">
+                        <label className="label">Phone Number</label>
+                        <input 
+                            type="text" 
+                            className="input"
+                            onInput={(event) => setNumber(event.target.value)}
+                        />
+                    </div>
+                    <Button 
+                        type="button" 
+                        value="Generate order" 
+                        className="generateOrder"
+                        onClick={generateOrder}
+                        disabled={cart.length === 0 || name.length === 0 
+                            || email.length === 0 || number.length === 0 ? true
+                            : false}
+                    />
+                </form>
             </div>
             <div className={orderId? "orderId" : "off"}>
                 <h2>Thanks for your order!</h2>
