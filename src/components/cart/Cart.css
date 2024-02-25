@@ -92,7 +92,7 @@
 
 @media (max-width: 460px){
     .rows{
-        grid-template-columns: 30px 200px 55px 50px 55px 20px;
+        grid-template-columns: 30px 200px 55px 20px 55px 20px;
     }
     .cartProductImg{
         width: 30px;

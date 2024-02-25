@@ -27,7 +27,7 @@ const Cart = () => {
                     <td></td>
                     <td>Title</td>
                     <td>Price</td>
-                    <td>Quantity</td>
+                    <td></td>
                     <td>Total</td>
                     <td>
                         <Button onClick={clear} className="clearAll" title="Clear All" value="Delete"/>
@@ -39,7 +39,7 @@ const Cart = () => {
                             <td><img src={product.image} alt={product.title} className="cartProductImg"/></td>
                             <td>{product.title}</td>
                             <td>${product.price}</td>
-                            <td>{product.quantity}</td>
+                            <td>x{product.quantity}</td>
                             <td>${product.quantity * product.price}</td>
                             <td className="trash">
                                 <a href="#" onClick={() => {removeItemById(product.id)}}>
