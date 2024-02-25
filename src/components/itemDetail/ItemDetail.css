@@ -29,4 +29,7 @@
     .title{
         font-size: 20px;
     }
+    .itemDetails{
+        margin-top: 8px;
+    }
 }
