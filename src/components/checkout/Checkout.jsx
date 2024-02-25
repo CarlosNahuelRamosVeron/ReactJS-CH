@@ -20,7 +20,7 @@ const Checkout = () => {
         if (!fullNameValidationResult && !emailValidationResult && !phoneNumberValidationResult) {
             console.log("Validations passed successfully!");
             const buyer = {name:name, email:email, phone:number};
-            const items = cart.map(item => ({id:item.id, title:item.title, price:item.price}));
+            const items = cart.map(item => ({id:item.id, title:item.title, price:item.price, quantity:item.quantity}));
             const date = new Date();
             const customDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
             const order = {buyer:buyer, items:items, date:customDate, total:totalPriceOfProducts()};
