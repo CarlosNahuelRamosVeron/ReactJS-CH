@@ -23,16 +23,18 @@ const Cart = () => {
                 <h1>YOUR CART</h1>
             </div>
             <table className="table">
-                <tr className="rows tableHeader">
-                    <td></td>
-                    <td>Title</td>
-                    <td>Price</td>
-                    <td></td>
-                    <td>Total</td>
-                    <td>
-                        <Button onClick={clear} className="clearAll" title="Clear All" value="Delete"/>
-                    </td>
-                </tr>
+                <thead>
+                    <tr className="rows tableHeader">
+                        <td></td>
+                        <td>Title</td>
+                        <td>Price</td>
+                        <td></td>
+                        <td>Total</td>
+                        <td>
+                            <Button onClick={clear} className="clearAll" title="Clear All" value="Delete"/>
+                        </td>
+                    </tr>
+                </thead>
                 <tbody>
                     {cart.map(product => 
                         <tr key={product.alvId} className="rows">

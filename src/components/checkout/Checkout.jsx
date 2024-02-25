@@ -58,6 +58,7 @@ const Checkout = () => {
             </div>
             <div>
                 <table>
+                    <thead>
                     <tr className="checkoutRows checkoutHeader">
                         <td></td>
                         <td>Title</td>
@@ -65,6 +66,7 @@ const Checkout = () => {
                         <td></td>
                         <td>Total</td>
                     </tr>
+                    </thead>
                     <tbody>
                         {cart.map(product => 
                             <tr key={product.alvId} className="checkoutRows">
@@ -72,16 +74,15 @@ const Checkout = () => {
                                 <td>{product.title}</td>
                                 <td>${product.price}</td>
                                 <td>x{product.quantity}</td>
-                                <td>${product.quantity * product.price}</td>
+                                <td className='lastColumn'>${product.quantity * product.price}</td>
                             </tr>
                         )}
                         <tr className="checkoutRows">
-                            <td>Total</td>
+                            <td className="total">Total</td>
                             <td></td>
                             <td></td>
                             <td>{totalQuantityOfProducts()}</td>
-                            <td>${totalPriceOfProducts()}</td>
-                            <td></td>
+                            <td className='lastColumn'>${totalPriceOfProducts()}</td>
                         </tr>
                     </tbody>
                 </table>
