@@ -7,6 +7,7 @@ const Button = (prop) => {
             className={prop.className}
             onClick={prop.onClick}
             disabled={prop.disabled}
+            title={prop.title}
         >
             {prop.value}
         </button>

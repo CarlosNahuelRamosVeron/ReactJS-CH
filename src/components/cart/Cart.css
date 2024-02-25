@@ -71,6 +71,31 @@
     background-color: blanchedalmond;
 }
 
+
+@media (max-width: 800px){
+    .rows{
+        grid-template-columns: 40px 250px 60px 60px 60px 80px;
+    }
+}
+
+@media (max-width: 600px){
+    .rows{
+        grid-template-columns: 40px 250px 55px 50px 55px 50px;
+    }
+}
+
+@media (max-width: 550px){
+    .rows{
+        grid-template-columns: 40px 200px 55px 50px 55px 50px;
+    }
+}
+
+@media (max-width: 460px){
+    .rows{
+        grid-template-columns: 40px 200px 55px 50px 55px 20px;
+    }
+}
+
 @media (max-width: 700px){
     .cartEmpty{
         margin: 200px 100px;

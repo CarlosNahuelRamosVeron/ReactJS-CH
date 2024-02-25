@@ -30,7 +30,7 @@ const Cart = () => {
                     <td>Quantity</td>
                     <td>Total</td>
                     <td>
-                        <Button onClick={clear} className="clearAll" value="Clear All"/>
+                        <Button onClick={clear} className="clearAll" title="Clear All" value="Delete"/>
                     </td>
                 </tr>
                 <tbody>
