@@ -6,19 +6,18 @@ import './CartWidget.css';
 
 const CartWidget = () => {
     const {totalQuantityOfProducts} = useContext(CartContext);
-    const isQuatityCero = totalQuantityOfProducts() === 0;
 
     return (
-        <Link to={"/cart"}>
+        <Link to={"/cart"} className="cartLink">
             <div className="cartWidgetContainer">
                 <img 
                     src={iconCart} 
-                    className={isQuatityCero? "icontCartAlone": "iconCart"} 
-                    alt="Carrito" width={24} 
+                    className="iconCart" 
+                    alt="Cart" width={24} 
                 />
-                <div className={isQuatityCero? 'off': 'amount'}>
+            </div>
+            <div className={totalQuantityOfProducts() === 0 ? 'off': 'amount'}>
                     <span className="amountValue">{totalQuantityOfProducts()}</span>
-                </div>
             </div>
         </Link>
     )

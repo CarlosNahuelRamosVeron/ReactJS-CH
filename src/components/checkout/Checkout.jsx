@@ -59,13 +59,13 @@ const Checkout = () => {
             <div>
                 <table>
                     <thead>
-                    <tr className="checkoutRows checkoutHeader">
-                        <td></td>
-                        <td>Title</td>
-                        <td>Price</td>
-                        <td></td>
-                        <td>Total</td>
-                    </tr>
+                        <tr className="checkoutRows checkoutHeader">
+                            <td></td>
+                            <td>Title</td>
+                            <td>Price</td>
+                            <td></td>
+                            <td>Total</td>
+                        </tr>
                     </thead>
                     <tbody>
                         {cart.map(product => 

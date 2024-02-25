@@ -42,7 +42,7 @@ const NavBar = () => {
                 <NavLink className={location.pathname === hoodies? activeLink: links} to={hoodies}>Hoodies</NavLink>
                 <NavLink className={location.pathname === shorts? activeLink: links} to={shorts}>Shorts</NavLink>
             </div>
-            <div className='column'>
+            <div className='columnCartWidget'>
                 <CartWidget/>
             </div>
         </nav>
