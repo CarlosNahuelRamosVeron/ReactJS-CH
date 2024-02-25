@@ -56,6 +56,10 @@
     font-size: small;
 }
 
+.rowTotal{
+    margin-top: 25px;
+}
+
 .lastColumn{
     display: flex;
     justify-content: end;

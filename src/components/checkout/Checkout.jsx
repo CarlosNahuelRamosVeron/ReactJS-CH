@@ -77,7 +77,7 @@ const Checkout = () => {
                                 <td className='lastColumn'>${product.quantity * product.price}</td>
                             </tr>
                         )}
-                        <tr className="checkoutRows">
+                        <tr className="checkoutRows rowTotal">
                             <td className="total">Total</td>
                             <td></td>
                             <td></td>

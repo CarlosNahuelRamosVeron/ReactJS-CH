@@ -50,7 +50,7 @@ const Cart = () => {
                             </td>
                         </tr>
                     )}
-                    <tr className="rows tableTotal">
+                    <tr className="rows rowTotal">
                         <td className="total">Total</td>
                         <td></td>
                         <td></td>
