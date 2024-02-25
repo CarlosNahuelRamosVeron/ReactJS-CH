@@ -1,4 +1,7 @@
 .navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     width: 30px;
     height: 30px;
@@ -7,7 +10,14 @@
     font-size: larger;
     color: #000;
     cursor: pointer;
-    text-align: center;
+   
+}
+
+@media (max-width: 400px){
+    .navBar{
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .counter{
