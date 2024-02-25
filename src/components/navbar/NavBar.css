@@ -86,6 +86,9 @@
     .activeLink{
         font-size: 25px;
     }
+    .columnCartWidget{
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 700px){
@@ -95,6 +98,9 @@
     }
     .activeLink{
         font-size: 20px;
+    }
+    .columnCartWidget{
+        margin-right: 10px;
     }
 }
 
