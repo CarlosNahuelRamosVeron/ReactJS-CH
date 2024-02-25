@@ -18,7 +18,7 @@ const NavBar = () => {
     return (
         <nav id="navBar">
             <div className='navBarResponsive'>
-                <div className={dropdown? "navBarResponsiveOn": "off"}>
+                <div className={dropdown? "navBarDropDownOn": "off"}>
                     <NavLink className={location.pathname === home? "off": links} onClick={() => setDropdown(!dropdown)} to={home}>Home</NavLink>
                     <NavLink className={location.pathname === tshirts? "off": links} onClick={() => setDropdown(!dropdown)} to={tshirts}>T-shirts</NavLink>
                     <NavLink className={location.pathname === hoodies? "off": links} onClick={() => setDropdown(!dropdown)} to={hoodies}>Hoodies</NavLink>

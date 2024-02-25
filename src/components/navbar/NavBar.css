@@ -57,7 +57,7 @@
     display: none;
 }
 
-.navBarResponsiveOn{
+.navBarDropDownOn{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 310px){
     .activeLink{
         font-size: 5px;
     }
